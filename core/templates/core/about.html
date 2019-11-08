@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">  
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/diego.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Diego Benitez</h2>   
+        <p>Oriundo de Avellaneda, actualmente estoy estudiando Desarrollo web. Cuento con estudios en Html, Css, Js, Java, python y Testing Qa.</p>
+        <p>Me encuentro en búsqueda de mi primer experiencia laboral en desarrollo.</p> 
+        
+        
+    </div>
+</div>
+{% endblock %}
